@@ -31,6 +31,8 @@
  
   Cabe aclarar que la limpieza se realizó con el objetivo de realizar las consultas solicitadas para el proyecto, es posible realizar un tratamiento aún más profundo pero que por cuestiones de tiempo debieron ser omitidas, pues debemos aprender a usar FastAPI y Docker para este trabajo.
   
+  Un tema no menor es la ruta usada para la importación de las librerias, dado un problema que comento más adelante con el VSC no he logrado usar la ruta generica para importar los datos, esto es Datasets/x.csv, ya que no me la detecta el sistema, es por eso que he debido usar la ruta completa de la ubicación en disco, y esto (a diferencia de lo creado en pycharm más adelante) no puede ser replicado en pycharm ya que en este IDE para poder editar y visualizar archivos ipynb se requiere una versión paga.
+  
 3. Consultas
 
  Las consultas fueron ejecutadas primero en MySQL, se encuentra en la carpeta ETL llamado consulta.sql, se pueden ejecutar y devolveran los valores solicitados. Esto se realizó a los fines de tener mayor facilidad de trasladar la consulta al entorno de fastAPI.
@@ -40,6 +42,8 @@
 Para el funcionamiento de fastAPI creé toda la estructura y los archivos necesarios para su funcionamiento. Config = Conexión con la database, Model = Creación de los modelos de tabla, Routers = Creación de las consultas, main = Todo lo necesario para que fastAPI funcione.
 
 Se realizaron pruebas con las consultas. Durante el trabajo se ha usado tanto pymysql como sqlalchemy para la creación de las consultas, pero dado a que sqlalchemy posee una herramienta particular para el uso del localhost en docker, decanté por usar sqlalchemy a pesar de que la creación de consultas es disntinta y más tediosa que la de pymysql.
+
+Tambien atravesé por problemas con el uso de Visual Studio Code, ya que el mismo no me generaba correctamente el entorno virtual, por lo que al hacer import de archivos .py no los reconocía y me devolvía el error "modulo name X not found", para solucionar esto directamente usé PyCharm que me genera el entorno virtual apenas inicio un proyecto, allí no tuve ningún problema de este tipo y pude gestionar los archivos de forma correcta.
 
 5. Docker
 
