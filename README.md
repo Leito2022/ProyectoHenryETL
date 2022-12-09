@@ -53,7 +53,7 @@ Se realizaron pruebas con las consultas. Durante el trabajo se ha usado tanto py
  
   <p align="center">Haz clic en la siguiente imagen para ser redireccionado al video!!</p>
  <p align="center">
- 
+  
  <p align="center">
  <a href="http://www.youtube.com/watch?feature=player_embedded&v=oENQ5kqMzqo
 " target="_blank"><img src="http://img.youtube.com/vi/oENQ5kqMzqo/0.jpg" 
