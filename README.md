@@ -18,6 +18,9 @@
   5. Docker
   6. Presentación Final
  
+ 
+ ###
+ 
 1. Suba de archivos
 
  La suba de archivos se realiza en el archivo Suba.ipynb que se encuentra en la carpeta ETL, allí se explica con detalle la suba de los datos. En lineas generales, se creó un indice para cada tabla etiquetando el tipo de plataforma que usa. Luego se concatena todas las columnas y se crea un indice nuevo. A partir de allí se exporta la tabla creada a MySQL para mayor tratamiento.
@@ -32,22 +35,26 @@
 
  Las consultas fueron ejecutadas primero en MySQL, se encuentra en la carpeta ETL llamado consulta.sql, se pueden ejecutar y devolveran los valores solicitados. Esto se realizó a los fines de tener mayor facilidad de trasladar la consulta al entorno de fastAPI.
  
-4. FastAPI (ADVERTENCIA)
+4. FastAPI 
 
- En el archivo main.py encontraremos la importación de la librería fastAPI junto con la variable que lo ejecuta. Funciona correctamente y es posible mandarle los gets solicitados.
+Para el funcionamiento de fastAPI creé toda la estructura y los archivos necesarios para su funcionamiento. Config = Conexión con la database, Model = Creación de los modelos de tabla, Routers = Creación de las consultas, main = Todo lo necesario para que fastAPI funcione.
 
- Debido a los constantes errores no fue posible crear una estructura más ordenada. La idea original era crear con sqlalchemist el ecosistema necesario para las consultas, esto es crear el route, el database, el model y los schemas. Pero por alguna razón, era constante el error donde al ejecutar uvicorn no detectaba las routers creados ni tampoco se detectaba los imports entre archivos a pesar de que a nivel script si se detectaban (Por ejemplo: al ejecutar una conexion en main.py importando la variable desde el archivo database.py traía un error de que no se encontraba el modulo database a pesar de que la sintaxis era correcta).
- Es por ello que para sortear este problema, tanto los parametros como las querys debieron realizarse en el main y usando pymysql para su gestión.
+Se realizaron pruebas con las consultas. Durante el trabajo se ha usado tanto pymysql como sqlalchemy para la creación de las consultas, pero dado a que sqlalchemy posee una herramienta particular para el uso del localhost en docker, decanté por usar sqlalchemy a pesar de que la creación de consultas es disntinta y más tediosa que la de pymysql.
 
 5. Docker
 
- A pesar de ser dos simples pasos generan diferentes complicaciones a la hora de generar una imagen, en principio se generaba bien pero luego al querer eliminar y reconstruir la imagen ya no se creaba por razones que desconozco. Otro de los problemas es modificar los puertos para que el cliente pueda usar la base de datos (ya que de por sí no cuenta con dicha base en su sistema local).
+ A pesar de ser dos simples pasos generan diferentes complicaciones a la hora de generar una imagen, la estructura del directorio es fundamental para que el container funcione correctamente; para que se gestione la conexión con la base de datos correctamente es necesario modificar parametros que luego no permite su uso a nivel local (localhost). 
+ 
+  En este sentido, quien vaya a utilizar este docker deberá indefectiblemente crear una base de datos en su mysql que debe llamarse proyectoind y levantar los archivos pelicula, genero y actor que se encuentra en el directorio de Datasets. Hecho eso el cointeiner creará la conexión con la base y devolverá el resultado de las querys.
  
 6. Presentación Final
 
  Puedes observar todo el proceso que realicé en el siguiente video:
  
- XXXX:...com
+ 
+[[youtube-{16by9}-{oENQ5kqMzqo}]] 
+
+ 
  
  <p align="center">
 <img src="https://gifimage.net/wp-content/uploads/2018/04/programacion-informatica-gif-2.gif"  height=400>
