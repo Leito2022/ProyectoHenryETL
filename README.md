@@ -74,5 +74,7 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
  - Docker
  
  Puedes ver más información sobre mí en el siguiente link: https://www.linkedin.com/in/rodriguezdatascience/
+ 
+ <p align="center">
 <img src="https://gifimage.net/wp-content/uploads/2018/04/programacion-informatica-gif-2.gif"  height=400>
 </p>
