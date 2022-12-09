@@ -52,7 +52,11 @@ Se realizaron pruebas con las consultas. Durante el trabajo se ha usado tanto py
  Puedes observar todo el proceso que realicé en el siguiente video:
  
  
-[[youtube-{16by9}-{oENQ5kqMzqo}]] 
+ 
+ <a href="http://www.youtube.com/watch?feature=player_embedded&v=oENQ5kqMzqo
+" target="_blank"><img src="http://img.youtube.com/vi/oENQ5kqMzqo/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
 
  
  
