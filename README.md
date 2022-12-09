@@ -1,3 +1,7 @@
+<p align="center"><img src="https://i.gifer.com/3Wby.mp4"  height=400>
+</p>
+
+
 # Proyecto_Individual01
  Autor: Rodríguez Jorge Leonardo
  Tema: Proyecto - Data Engineer
