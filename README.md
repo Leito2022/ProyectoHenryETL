@@ -1,5 +1,7 @@
-<p align="center"><img src="[https://i.gifer.com/3Wby.mp4](https://i.gifer.com/3Wby.gif)"  height=400>
+<p align="center">
+<img src="https://i.imgur.com/OAG522g.jpg"  height=400>
 </p>
+
 
 
 # Proyecto_Individual01
@@ -47,4 +49,6 @@
  
  XXXX:...com
  
- 
+ <p align="center">
+<img src="https://gifimage.net/wp-content/uploads/2018/04/programacion-informatica-gif-2.gif"  height=400>
+</p>
