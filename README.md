@@ -51,15 +51,28 @@ Se realizaron pruebas con las consultas. Durante el trabajo se ha usado tanto py
 
  Puedes observar todo el proceso que realicé en el siguiente video:
  
+  <p align="center">Haz clic en la siguiente imagen para ser redireccionado al video!!</p>
+ <p align="center">
  
- 
+ <p align="center">
  <a href="http://www.youtube.com/watch?feature=player_embedded&v=oENQ5kqMzqo
 " target="_blank"><img src="http://img.youtube.com/vi/oENQ5kqMzqo/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
-
+</p>
  
- 
+ <p align="center">Gracias por tu atención.</p>
  <p align="center">
+ 
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ TECNOLOGIAS USADAS
+ - Pandas
+ - Numpy
+ - SQLAlchemy
+ - MySQL
+ - FastAPI
+ - Docker
+ 
+ Puedes ver más información sobre mí en el siguiente link: https://www.linkedin.com/in/rodriguezdatascience/
 <img src="https://gifimage.net/wp-content/uploads/2018/04/programacion-informatica-gif-2.gif"  height=400>
 </p>
